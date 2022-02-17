@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error404')
 })
-
+app.listen(3000)
 // Listen for Connections
 app.listen(process.env.PORT)

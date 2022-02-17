@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoBarz98/project-rest-rant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoBarz98/project-rest-rant/issues"
+  },
+  "homepage": "https://github.com/MoBarz98/project-rest-rant#readme"
 }
