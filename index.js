@@ -1,7 +1,8 @@
 // Modules and Globals
-require('dotenv').config()
 const express = require('express')
+require('dotenv').config()
 const app = express()
+const PORT = process.env.PORT 
 
 // Express Settings
 app.set('views', __dirname + '/views')
@@ -17,8 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.render('error404')
+    res.status('<h1>404 Page </h1>')
 })
-app.listen(3000)
 // Listen for Connections
-app.listen(process.env.PORT)
+app.listen( PORT,() => console.log (`listening on port ${PORT}`))
