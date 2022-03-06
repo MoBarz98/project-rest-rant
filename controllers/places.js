@@ -5,8 +5,9 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
-router.post('/new', (req, res) => {
-  res.send('/places')
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST /places')
 })
 
 // GET /places
